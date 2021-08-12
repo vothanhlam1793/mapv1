@@ -13,11 +13,15 @@ section .map {
 
 section .map img {
   max-width: 80vw;
-  width: 1200px;
+  width: 800px;
   margin: auto;
   border: 1px solid black;
 }
 
+.map1 {
+  max-width: 80vw;
+  width: 800px;
+}
 .pointer {
   top: 0;
   left: 0;

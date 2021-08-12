@@ -6,20 +6,48 @@
     <title>Map app</title>
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-  </head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 
-  <body>
-    <header>
-      <h1>Map app</h1>
-    </header>
-    <main>
-      <section>
-        <div class="map">
-          <img src="images/Mercator-projection.jpg" alt="world map" />
-          <div id="pointers-container"></div>
-        </div>
-      </section>
-    </main>
+  </head>
+  <body class="" >
+
+        <section>
+          <div class="alert alert-warning" id="app1">
+            <table class="table">
+              <tr>
+                <td v-for="native in natives">{{native}}</td>
+              </tr>
+            </table
+          </div>
+        </section>
+        <section>
+          <div class="map">
+            <div>
+              <img src="images/Map4.png" alt="world map" class="border border-warning"/>
+              <div id="pointers-container"></div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="alert alert-warning" id="app2">
+            <table class="table">
+              <tr>
+                <td>Now: {{now}}</td>
+                <td>Total: {{total}}</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+
     <script src="js/main.js"></script>
+    <script src="js/getGeo.js"></script>
+    <script src="js/socket.js"></script>
+    <script src="js/vue.js"></script>
   </body>
 </html>
