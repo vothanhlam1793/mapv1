@@ -16,8 +16,8 @@ function latLonToOffsets(latitude, longitude, mapWidth, mapHeight) {
     const verticalOffsetFromEquator =
         radius * Math.log(Math.tan(Math.PI / 4 + latRad / 2));
     const y = mapHeight / 2 - verticalOffsetFromEquator;
-    console.log(x, y);
-    console.log(mapWidth, mapHeight);
+    // console.log(x, y);
+    // console.log(mapWidth, mapHeight);
     return {
         x,
         y

@@ -18,12 +18,10 @@
   <body class="" >
 
         <section>
-          <div class="alert alert-warning" id="app1">
-            <table class="table">
-              <tr>
-                <td v-for="native in natives">{{native}}</td>
-              </tr>
-            </table
+          <div class="alert alert-success" id="app1">
+            <div style="height: 48px;">
+              <p id="effect">{{nati}}</p>
+            </div>
           </div>
         </section>
         <section>
@@ -38,8 +36,8 @@
           <div class="alert alert-warning" id="app2">
             <table class="table">
               <tr>
-                <td>Now: {{now}}</td>
-                <td>Total: {{total}}</td>
+                <td>Lượt: {{getTotal()}}</td>
+                <td>Quốc gia: {{total.length}}</td>
               </tr>
             </table>
           </div>

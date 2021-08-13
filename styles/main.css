@@ -29,4 +29,12 @@ section .map img {
   border-radius: 100%;
   color: transparent;
   border: 3px solid red;
+  animation-name: example;
+  animation-duration: 600ms;
+  animation-iteration-count: 10;
+}
+
+@keyframes example {
+  0%   {border: 18px solid yellow}
+  50% {border: 3px solid blue}
 }
