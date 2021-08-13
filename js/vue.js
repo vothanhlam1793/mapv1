@@ -6,13 +6,14 @@ $(document).ready(function(){
 //             natives:["1", "2", "3", "4", "5"]
             natives:[],
             nati: "",
-            cb: {}
+            cb: {},
+            city: ""
         },
         created(){
             console.log("From Vue")
         },
         methods: {
-            pushNative(country){
+            pushNative(country, city){
                 var that = this;
                 var temp = [country];
                 temp.push(this.natives[0]);
@@ -21,6 +22,7 @@ $(document).ready(function(){
                 // temp.push(this.natives[3]);
                 this.natives = temp;
                 this.nati = country;
+                this.city = city;
                 $("#effect").animate({fontSize: "36px"}, 10, function(){
 
                     $("#effect").animate({fontSize: "18px"}, 30);

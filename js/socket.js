@@ -17,7 +17,7 @@ socket.onmessage = function(event) {
     renderPointer(a.x, a.y);
     // app2.now += 1;
     // app2.total += 1;
-    app1.pushNative(geo.country);
+    app1.pushNative(geo.country, geo.city);
 };
   
 socket.onclose = function(event) {
